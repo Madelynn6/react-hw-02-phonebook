@@ -6,14 +6,14 @@ const ContactList = ({ filtered, handleDelete }) => {
     <ul>
       {filtered.map(el => (
         <li key={el.id} className={css.li}>
-          <p class={css.text}>{el.name}</p>
-          <p class={css.text}>{el.number}</p>
+          <p className={css.text}>{el.name}</p>
+          <p className={css.text}>{el.number}</p>
 
           <button
             name={el.name}
             id={el.id}
             onClick={handleDelete}
-            class={css.btn}
+            className={css.btn}
           >
             Delete
           </button>
